@@ -308,7 +308,7 @@ export default function ProductCardTPS({
         if (!frag) continue;
 
         const stripeId = productMapping[frag.handle]?.price_id || "";
-        const regularPrice = Number(frag.price?.regular) || 26.0;
+        const regularPrice = Number(frag.price?.regular) || 36.0;
         const originalPrice =
           Number(frag.price?.original_price) || regularPrice * 2;
 
@@ -320,22 +320,22 @@ export default function ProductCardTPS({
           itemPrice = regularPrice;
           itemOriginalPrice = originalPrice;
         } else if (count === 3) {
-          itemPrice = 99.99 / 3;
+          itemPrice = 119.99 / 3;
           itemOriginalPrice = regularPrice;
         } else if (count >= 4 && count < 6) {
           if (i < 3) {
-            itemPrice = 99.99 / 3;
+            itemPrice = 119.99 / 3;
             itemOriginalPrice = regularPrice;
           } else {
             itemPrice = regularPrice;
             itemOriginalPrice = originalPrice;
           }
         } else if (count === 6) {
-          itemPrice = 199.98 / 6;
+          itemPrice = 239.98 / 6;
           itemOriginalPrice = regularPrice;
         } else {
           // 7+ units: first 6 at bundle price, rest at full price
-          itemPrice = i < 6 ? 199.98 / 6 : regularPrice;
+          itemPrice = i < 6 ? 239.98 / 6 : regularPrice;
           itemOriginalPrice = i < 6 ? regularPrice : originalPrice;
         }
 

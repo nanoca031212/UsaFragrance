@@ -16,8 +16,8 @@ export interface BundleSelection {
   totalPrice: number;
 }
 
-const TRIO_PRICE = 99.99;
-const HEXA_PRICE = 199.98;
+const TRIO_PRICE = 119.99;
+const HEXA_PRICE = 239.98;
 
 export default function BundleSelector({
   currentProduct,
@@ -54,7 +54,7 @@ export default function BundleSelector({
   const packCount =
     selectedPack === "single" ? 1 : selectedPack === "trio" ? 3 : 6;
 
-  const unitPrice = Number(currentProduct.price.regular) || 36.0;
+  const unitPrice = Number(currentProduct.price.regular) || 46.0;
   const SINGLE_ORIGINAL = unitPrice * 2.5; // Showing a premium original price
   const TRIO_ORIGINAL = unitPrice * 3 * 2;
   const HEXA_ORIGINAL = unitPrice * 6 * 2;

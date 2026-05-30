@@ -1,4 +1,4 @@
-﻿{
+{
   "products": [
     {
       "id": "1",
@@ -8,7 +8,7 @@
       "description_html": "<div class=\"product-description\"><h3>212 Men Carolina Herrera Edt</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0001",
       "price": {
-        "regular": 36.99,
+        "regular": 46.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -50,7 +50,7 @@
       "description_html": "<div class=\"product-description\"><h3>Alien Eau de Parfum</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0002",
       "price": {
-        "regular": 41.99,
+        "regular": 51.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -91,7 +91,7 @@
       "description_html": "<div class=\"product-description\"><h3>Amadeirado Floral Fragrância Marcante</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0003",
       "price": {
-        "regular": 38.99,
+        "regular": 48.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -132,7 +132,7 @@
       "description_html": "<div class=\"product-description\"><h3>Angel Eau de Toilette</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0004",
       "price": {
-        "regular": 40.99,
+        "regular": 50.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 80,
@@ -173,7 +173,7 @@
       "description_html": "<div class=\"product-description\"><h3>Angel Mugler Les Perfuma Corps</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0005",
       "price": {
-        "regular": 41.99,
+        "regular": 51.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 76,
@@ -214,7 +214,7 @@
       "description_html": "<div class=\"product-description\"><h3>Armaf Club De Nuit Intense</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0006",
       "price": {
-        "regular": 38.99,
+        "regular": 48.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -257,7 +257,7 @@
       "description_html": "<div class=\"product-description\"><h3>Armani Beauty  Sì Eau de Parfum Refilável</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0007",
       "price": {
-        "regular": 40.99,
+        "regular": 50.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 77,
@@ -298,7 +298,7 @@
       "description_html": "<div class=\"product-description\"><h3>Armani Beauty Eau pour Homme Pour homme</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0008",
       "price": {
-        "regular": 41.99,
+        "regular": 51.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 77,
@@ -341,7 +341,7 @@
       "description_html": "<div class=\"product-description\"><h3>Armani Beauty Stronger With You Intensely</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0009",
       "price": {
-        "regular": 38.99,
+        "regular": 48.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -383,7 +383,7 @@
       "description_html": "<div class=\"product-description\"><h3>Armani Code Giorgio Armani</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0010",
       "price": {
-        "regular": 40.99,
+        "regular": 50.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 80,
@@ -427,7 +427,7 @@
       "description_html": "<div class=\"product-description\"><h3>Azzaro Pour Homme Eau De Toilette</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0011",
       "price": {
-        "regular": 38.99,
+        "regular": 48.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -470,7 +470,7 @@
       "description_html": "<div class=\"product-description\"><h3>Bad Boy Extreme Eau de Parfum</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0012",
       "price": {
-        "regular": 41.99,
+        "regular": 51.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 77,
@@ -512,7 +512,7 @@
       "description_html": "<div class=\"product-description\"><h3>Black Opium Eau de Parfum</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0013",
       "price": {
-        "regular": 39.99,
+        "regular": 49.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -553,7 +553,7 @@
       "description_html": "<div class=\"product-description\"><h3>Bleu De Chanel Eau De Toilette</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0014",
       "price": {
-        "regular": 38.99,
+        "regular": 48.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -595,7 +595,7 @@
       "description_html": "<div class=\"product-description\"><h3>Bleu De Chanel Parfum</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0015",
       "price": {
-        "regular": 39.99,
+        "regular": 49.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -637,7 +637,7 @@
       "description_html": "<div class=\"product-description\"><h3>Boss The Scent Hugo Boss</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0016",
       "price": {
-        "regular": 36.99,
+        "regular": 46.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -679,7 +679,7 @@
       "description_html": "<div class=\"product-description\"><h3>Bottled Infinite</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0017",
       "price": {
-        "regular": 39.99,
+        "regular": 49.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -722,7 +722,7 @@
       "description_html": "<div class=\"product-description\"><h3>Burberry Her Eau de Parfum</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0018",
       "price": {
-        "regular": 36.99,
+        "regular": 46.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -764,7 +764,7 @@
       "description_html": "<div class=\"product-description\"><h3>Bvlgari Man In Black Parfum</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0019",
       "price": {
-        "regular": 39.99,
+        "regular": 49.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -806,7 +806,7 @@
       "description_html": "<div class=\"product-description\"><h3>Byredo Rose Of No Man's Land</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0020",
       "price": {
-        "regular": 40.99,
+        "regular": 50.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -849,7 +849,7 @@
       "description_html": "<div class=\"product-description\"><h3>Carolina Herrera 212 Vip Black</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0021",
       "price": {
-        "regular": 36.99,
+        "regular": 46.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -891,7 +891,7 @@
       "description_html": "<div class=\"product-description\"><h3>Carolina Herrera 212 Vip Rose</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0022",
       "price": {
-        "regular": 38.99,
+        "regular": 48.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -932,7 +932,7 @@
       "description_html": "<div class=\"product-description\"><h3>Carolina Herrera Good</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0023",
       "price": {
-        "regular": 40.99,
+        "regular": 50.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 77,
@@ -974,7 +974,7 @@
       "description_html": "<div class=\"product-description\"><h3>Chloé Eau De Parfum</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0024",
       "price": {
-        "regular": 36.99,
+        "regular": 46.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -1015,7 +1015,7 @@
       "description_html": "<div class=\"product-description\"><h3>Coco Mademoiselle Eau de Parfum</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0025",
       "price": {
-        "regular": 38.99,
+        "regular": 48.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -1057,7 +1057,7 @@
       "description_html": "<div class=\"product-description\"><h3>Creed Aventus</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0026",
       "price": {
-        "regular": 39.99,
+        "regular": 49.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -1099,7 +1099,7 @@
       "description_html": "<div class=\"product-description\"><h3>Creed Love In White</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0027",
       "price": {
-        "regular": 36.99,
+        "regular": 46.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -1140,7 +1140,7 @@
       "description_html": "<div class=\"product-description\"><h3>De Nicho Layton</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0028",
       "price": {
-        "regular": 39.99,
+        "regular": 49.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -1182,7 +1182,7 @@
       "description_html": "<div class=\"product-description\"><h3>Dior Hypnotic Poison Eau De Toillete</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0029",
       "price": {
-        "regular": 40.99,
+        "regular": 50.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 77,
@@ -1224,7 +1224,7 @@
       "description_html": "<div class=\"product-description\"><h3>Dior J'adore L'or Essence De Parfum</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0030",
       "price": {
-        "regular": 39.99,
+        "regular": 49.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -1265,7 +1265,7 @@
       "description_html": "<div class=\"product-description\"><h3>Dior Sauvage Eau de Toilette</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0031",
       "price": {
-        "regular": 40.99,
+        "regular": 50.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -1306,7 +1306,7 @@
       "description_html": "<div class=\"product-description\"><h3>Dolce & Gabbana Light Blue Eau de Toilette</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0032",
       "price": {
-        "regular": 36.99,
+        "regular": 46.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -1349,7 +1349,7 @@
       "description_html": "<div class=\"product-description\"><h3>Eau de Parfum Guerlain L'Homme Idéal L'Intense</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0033",
       "price": {
-        "regular": 38.99,
+        "regular": 48.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -1392,7 +1392,7 @@
       "description_html": "<div class=\"product-description\"><h3>Ferrari Black Eau De Toilette</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0034",
       "price": {
-        "regular": 41.99,
+        "regular": 51.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 77,
@@ -1435,7 +1435,7 @@
       "description_html": "<div class=\"product-description\"><h3>Frederic Malle Portrait Of A Lady Perfume</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0035",
       "price": {
-        "regular": 36.99,
+        "regular": 46.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -1477,7 +1477,7 @@
       "description_html": "<div class=\"product-description\"><h3>French Avenue Royal Blend Extrait De Parfum</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0036",
       "price": {
-        "regular": 41.99,
+        "regular": 51.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -1520,7 +1520,7 @@
       "description_html": "<div class=\"product-description\"><h3>Gentleman Réserve Privée Givenchy</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0037",
       "price": {
-        "regular": 40.99,
+        "regular": 50.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -1561,7 +1561,7 @@
       "description_html": "<div class=\"product-description\"><h3>Giorgio Armani Acqua Di Giò Profondo</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0038",
       "price": {
-        "regular": 38.99,
+        "regular": 48.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -1605,7 +1605,7 @@
       "description_html": "<div class=\"product-description\"><h3>Giorgio Armani Si Eau De Parfum</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0039",
       "price": {
-        "regular": 40.99,
+        "regular": 50.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 77,
@@ -1647,7 +1647,7 @@
       "description_html": "<div class=\"product-description\"><h3>Givenchy Amarige</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0040",
       "price": {
-        "regular": 36.99,
+        "regular": 46.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -1689,7 +1689,7 @@
       "description_html": "<div class=\"product-description\"><h3>Givenchy Gentleman Society Ambrée</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0041",
       "price": {
-        "regular": 39.99,
+        "regular": 49.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -1731,7 +1731,7 @@
       "description_html": "<div class=\"product-description\"><h3>Gucci Flora Gorgeous Gardenia Eau De Parfum</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0042",
       "price": {
-        "regular": 41.99,
+        "regular": 51.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 76,
@@ -1773,7 +1773,7 @@
       "description_html": "<div class=\"product-description\"><h3>Gucci Guilty Pour Homme Eau de Parfum</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0043",
       "price": {
-        "regular": 39.99,
+        "regular": 49.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -1814,7 +1814,7 @@
       "description_html": "<div class=\"product-description\"><h3>Hugo Boss Perfume Bottled</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0044",
       "price": {
-        "regular": 38.99,
+        "regular": 48.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -1856,7 +1856,7 @@
       "description_html": "<div class=\"product-description\"><h3>Initio Oud for Greatness</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0045",
       "price": {
-        "regular": 36.99,
+        "regular": 46.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -1897,7 +1897,7 @@
       "description_html": "<div class=\"product-description\"><h3>Invictus De Paco Rabanne Eau De Toilette</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0046",
       "price": {
-        "regular": 39.99,
+        "regular": 49.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -1940,7 +1940,7 @@
       "description_html": "<div class=\"product-description\"><h3>Invictus Legend</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0047",
       "price": {
-        "regular": 41.99,
+        "regular": 51.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 76,
@@ -1983,7 +1983,7 @@
       "description_html": "<div class=\"product-description\"><h3>Invictus Victory Paco Rabanne Edp</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0048",
       "price": {
-        "regular": 39.99,
+        "regular": 49.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -2027,7 +2027,7 @@
       "description_html": "<div class=\"product-description\"><h3>Jean Paul Gaultier</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0049",
       "price": {
-        "regular": 40.99,
+        "regular": 50.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 80,
@@ -2068,7 +2068,7 @@
       "description_html": "<div class=\"product-description\"><h3>Jean Paul Gaultier Le Male Elixir</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0050",
       "price": {
-        "regular": 41.99,
+        "regular": 51.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 77,
@@ -2111,7 +2111,7 @@
       "description_html": "<div class=\"product-description\"><h3>Jean Paul Gaultier Scandal</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0051",
       "price": {
-        "regular": 39.99,
+        "regular": 49.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -2152,7 +2152,7 @@
       "description_html": "<div class=\"product-description\"><h3>Jean Paul Gaultier Ultra Male Eau de Toilette Intense</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0052",
       "price": {
-        "regular": 41.99,
+        "regular": 51.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 77,
@@ -2194,7 +2194,7 @@
       "description_html": "<div class=\"product-description\"><h3>Kenzo Homme Eau de Parfum</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0053",
       "price": {
-        "regular": 39.99,
+        "regular": 49.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -2236,7 +2236,7 @@
       "description_html": "<div class=\"product-description\"><h3>L'interdit Eau De Parfum</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0054",
       "price": {
-        "regular": 36.99,
+        "regular": 46.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -2278,7 +2278,7 @@
       "description_html": "<div class=\"product-description\"><h3>Lancôme La Nuit Trésor Fem</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0055",
       "price": {
-        "regular": 39.99,
+        "regular": 49.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -2321,7 +2321,7 @@
       "description_html": "<div class=\"product-description\"><h3>Lancôme La Vie Est Belle Vanille Nude</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0056",
       "price": {
-        "regular": 36.99,
+        "regular": 46.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -2362,7 +2362,7 @@
       "description_html": "<div class=\"product-description\"><h3>Le Labo Santal 33</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0057",
       "price": {
-        "regular": 38.99,
+        "regular": 48.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -2405,7 +2405,7 @@
       "description_html": "<div class=\"product-description\"><h3>Libre Eau de Parfum da Yves Saint Laurent</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0058",
       "price": {
-        "regular": 36.99,
+        "regular": 46.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -2448,7 +2448,7 @@
       "description_html": "<div class=\"product-description\"><h3>Louis Vuitton Imagination</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0059",
       "price": {
-        "regular": 40.99,
+        "regular": 50.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -2490,7 +2490,7 @@
       "description_html": "<div class=\"product-description\"><h3>M. Micallef GnTonic</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0060",
       "price": {
-        "regular": 39.99,
+        "regular": 49.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -2533,7 +2533,7 @@
       "description_html": "<div class=\"product-description\"><h3>Marc Jacobs Perfect Eau de Toilette</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0061",
       "price": {
-        "regular": 36.99,
+        "regular": 46.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -2575,7 +2575,7 @@
       "description_html": "<div class=\"product-description\"><h3>Million Gold for Her</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0062",
       "price": {
-        "regular": 41.99,
+        "regular": 51.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 77,
@@ -2616,7 +2616,7 @@
       "description_html": "<div class=\"product-description\"><h3>Montblanc Explorer Extreme Eau De</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0063",
       "price": {
-        "regular": 40.99,
+        "regular": 50.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -2658,7 +2658,7 @@
       "description_html": "<div class=\"product-description\"><h3>Montblanc Signature Absolue</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0064",
       "price": {
-        "regular": 38.99,
+        "regular": 48.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -2699,7 +2699,7 @@
       "description_html": "<div class=\"product-description\"><h3>Moschino Toy Boy</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0065",
       "price": {
-        "regular": 36.99,
+        "regular": 46.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -2741,7 +2741,7 @@
       "description_html": "<div class=\"product-description\"><h3>Nuit d'Issey da marca Issey Miyake</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0066",
       "price": {
-        "regular": 41.99,
+        "regular": 51.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 77,
@@ -2782,7 +2782,7 @@
       "description_html": "<div class=\"product-description\"><h3>One Million Paco Rabanne</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0067",
       "price": {
-        "regular": 40.99,
+        "regular": 50.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -2825,7 +2825,7 @@
       "description_html": "<div class=\"product-description\"><h3>Orientica Royal Bleu Eau De Parfum</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0068",
       "price": {
-        "regular": 39.99,
+        "regular": 49.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -2868,7 +2868,7 @@
       "description_html": "<div class=\"product-description\"><h3>Paco Rabanne Olympéa</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0069",
       "price": {
-        "regular": 36.99,
+        "regular": 46.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -2910,7 +2910,7 @@
       "description_html": "<div class=\"product-description\"><h3>Paco Rabanne Phantom</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0070",
       "price": {
-        "regular": 41.99,
+        "regular": 51.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -2952,7 +2952,7 @@
       "description_html": "<div class=\"product-description\"><h3>Paradoxe Prada</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0071",
       "price": {
-        "regular": 38.99,
+        "regular": 48.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -2993,7 +2993,7 @@
       "description_html": "<div class=\"product-description\"><h3>Prada Luna Rossa Black</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0072",
       "price": {
-        "regular": 40.99,
+        "regular": 50.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 80,
@@ -3035,7 +3035,7 @@
       "description_html": "<div class=\"product-description\"><h3>Pure Xs Paco Rabanne Edt</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0073",
       "price": {
-        "regular": 38.99,
+        "regular": 48.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -3079,7 +3079,7 @@
       "description_html": "<div class=\"product-description\"><h3>Rabanne Fame Edp</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0074",
       "price": {
-        "regular": 40.99,
+        "regular": 50.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -3120,7 +3120,7 @@
       "description_html": "<div class=\"product-description\"><h3>Rabanne Phantom Parfum</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0075",
       "price": {
-        "regular": 36.99,
+        "regular": 46.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 77,
@@ -3163,7 +3163,7 @@
       "description_html": "<div class=\"product-description\"><h3>Scandal Pour Homme</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0076",
       "price": {
-        "regular": 41.99,
+        "regular": 51.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -3205,7 +3205,7 @@
       "description_html": "<div class=\"product-description\"><h3>Silver Scent Intense Jacques Bogart Eau de Toilette</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0077",
       "price": {
-        "regular": 39.99,
+        "regular": 49.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -3248,7 +3248,7 @@
       "description_html": "<div class=\"product-description\"><h3>The Only One da marca Dolce&Gabbana</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0078",
       "price": {
-        "regular": 38.99,
+        "regular": 48.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -3291,7 +3291,7 @@
       "description_html": "<div class=\"product-description\"><h3>Tom Ford Beauty Tobacco Vanille Eau</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0079",
       "price": {
-        "regular": 39.99,
+        "regular": 49.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -3335,7 +3335,7 @@
       "description_html": "<div class=\"product-description\"><h3>Valentino Donna Born In Roma Intense Eau De</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0080",
       "price": {
-        "regular": 40.99,
+        "regular": 50.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 77,
@@ -3376,7 +3376,7 @@
       "description_html": "<div class=\"product-description\"><h3>Valentino Uomo Born In Roma</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0081",
       "price": {
-        "regular": 38.99,
+        "regular": 48.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -3417,7 +3417,7 @@
       "description_html": "<div class=\"product-description\"><h3>Versace Dylan Blue Eau</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0082",
       "price": {
-        "regular": 41.99,
+        "regular": 51.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -3458,7 +3458,7 @@
       "description_html": "<div class=\"product-description\"><h3>Versace Dylan Turquoise</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0083",
       "price": {
-        "regular": 39.99,
+        "regular": 49.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -3500,7 +3500,7 @@
       "description_html": "<div class=\"product-description\"><h3>Versace Eros Eau de Parfum</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0084",
       "price": {
-        "regular": 41.99,
+        "regular": 51.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 77,
@@ -3542,7 +3542,7 @@
       "description_html": "<div class=\"product-description\"><h3>Versace Eros Energy Eau de Parfum</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0085",
       "price": {
-        "regular": 39.99,
+        "regular": 49.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -3584,7 +3584,7 @@
       "description_html": "<div class=\"product-description\"><h3>Versace Eros Pour Femme</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0086",
       "price": {
-        "regular": 40.99,
+        "regular": 50.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -3626,7 +3626,7 @@
       "description_html": "<div class=\"product-description\"><h3>Xerjoff Erba Pura Eau De Parfum</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0087",
       "price": {
-        "regular": 36.99,
+        "regular": 46.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 78,
@@ -3667,7 +3667,7 @@
       "description_html": "<div class=\"product-description\"><h3>Y Elixir Ysl Parfum Intense</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0088",
       "price": {
-        "regular": 39.99,
+        "regular": 49.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -3709,7 +3709,7 @@
       "description_html": "<div class=\"product-description\"><h3>Y Le Parfum da marca Yves Saint Laurent</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0089",
       "price": {
-        "regular": 38.99,
+        "regular": 48.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 79,
@@ -3754,7 +3754,7 @@
       "description_html": "<div class=\"product-description\"><h3>Yves Saint Laurent Mon Paris Eau de Parfum</h3><p>An exceptional fragrance offering unprecedented value and luxury. Perfect for those who appreciate premium scents.</p></div>",
       "sku": "FRAG-0090",
       "price": {
-        "regular": 40.99,
+        "regular": 50.99,
         "sale": null,
         "on_sale": true,
         "discount_percent": 77,
@@ -3797,7 +3797,7 @@
       "description_html": "<div class=\"product-description\"><h3>1 Million Paco Rabanne</h3><p>An exceptional fragrance offering unprecedented value and luxury.</p></div>",
       "sku": "FRAG-0091",
       "price": {
-        "regular": 41.99,
+        "regular": 51.99,
         "sale": null,
         "original_price": 145,
         "on_sale": true,
