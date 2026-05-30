@@ -331,11 +331,11 @@ export default function ProductCardTPS({
             itemOriginalPrice = originalPrice;
           }
         } else if (count === 6) {
-          itemPrice = 179.99 / 6;
+          itemPrice = 199.98 / 6;
           itemOriginalPrice = regularPrice;
         } else {
           // 7+ units: first 6 at bundle price, rest at full price
-          itemPrice = i < 6 ? 179.99 / 6 : regularPrice;
+          itemPrice = i < 6 ? 199.98 / 6 : regularPrice;
           itemOriginalPrice = i < 6 ? regularPrice : originalPrice;
         }
 
