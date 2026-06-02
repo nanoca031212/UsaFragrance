@@ -22,10 +22,9 @@ export default function BaseCollection({
   description,
   filterFunction,
 }: BaseCollectionProps) {
-  // Se houver uma função de filtro, aplica ela nos produtos iniciais
-  const baseProducts = filterFunction
-    ? initialProducts.filter(filterFunction)
-    : initialProducts;
+  const [baseProducts, setBaseProducts] = useState<Product[]>(() =>
+    filterFunction ? initialProducts.filter(filterFunction) : initialProducts
+  );
   const [products, setProducts] = useState(baseProducts);
 
   const router = useRouter();
@@ -47,6 +46,16 @@ export default function BaseCollection({
   const lastScrollY = useRef(0);
   const collapseTimerRef = useRef<NodeJS.Timeout | null>(null);
   const didResetRef = useRef(false);
+
+  // Resync products when navigating between collection pages (e.g. mens ↔ womens)
+  useEffect(() => {
+    const newBase = filterFunction
+      ? initialProducts.filter(filterFunction)
+      : initialProducts;
+    setBaseProducts(newBase);
+    setProducts(newBase);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [router.pathname]);
 
   // Reset bundle and cart every time the page mounts fresh (outside selection mode)
   useEffect(() => {
