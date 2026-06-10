@@ -391,12 +391,15 @@ export default function CheckoutPage() {
         ) : (
           <>
             {clientSecret ? (
-              <EmbeddedCheckoutProvider
-                stripe={stripePromise}
-                options={{ clientSecret }}
-              >
-                <EmbeddedCheckout />
-              </EmbeddedCheckoutProvider>
+              <div className="relative">
+                <EmbeddedCheckoutProvider
+                  stripe={stripePromise}
+                  options={{ clientSecret }}
+                >
+                  <EmbeddedCheckout />
+                </EmbeddedCheckoutProvider>
+                <div className="absolute bottom-0 left-0 right-0 h-10 bg-white" />
+              </div>
             ) : (
               <div className="flex flex-col justify-center items-center h-64 bg-white rounded-lg shadow-sm">
                 <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-black mb-4"></div>
