@@ -86,8 +86,14 @@ export default function ShoppingBag({ isOpen, onClose }: ShoppingBagProps) {
             <div className="text-center py-8">
               <p className="text-gray-500">Your shopping bag is empty</p>
             </div>
-          ) : (
-            items.map((item) => (
+          ) : (() => {
+            const sumOthers = items.slice(0, -1).reduce((s, it) => s + Math.round(it.price * 100) / 100 * it.quantity, 0);
+            const displayPrices = items.map((item, i) =>
+              i < items.length - 1
+                ? Math.round(item.price * 100) / 100
+                : parseFloat(((total - sumOthers) / item.quantity).toFixed(2))
+            );
+            return items.map((item, index) => (
               <div key={item.id} className="flex gap-4 py-4 border-b">
                 {/* Product Image */}
                 <div className="relative w-20 h-20 flex-shrink-0">
@@ -104,7 +110,7 @@ export default function ShoppingBag({ isOpen, onClose }: ShoppingBagProps) {
                   <h3 className="text-sm font-medium truncate">{item.title}</h3>
                   <p className="text-xs text-gray-500 truncate">{item.subtitle}</p>
                   <div className="flex items-center gap-2 mt-1">
-                    <p className="text-sm font-bold text-black">${(item.price * item.quantity).toFixed(2)}</p>
+                    <p className="text-sm font-bold text-black">${(displayPrices[index] * item.quantity).toFixed(2)}</p>
                     <span className="text-xs line-through text-gray-400">${((item.originalPrice || 169.99) * item.quantity).toFixed(2)}</span>
                   </div>
 
@@ -135,8 +141,8 @@ export default function ShoppingBag({ isOpen, onClose }: ShoppingBagProps) {
                   Remove
                 </button>
               </div>
-            ))
-          )}
+            ));
+          })()}
         </div>
 
         {/* Footer - always visible */}

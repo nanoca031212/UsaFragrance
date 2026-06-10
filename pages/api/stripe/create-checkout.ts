@@ -33,42 +33,34 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const userAgent = req.headers['user-agent'] || '';
     const clientIp = (req.headers['x-forwarded-for'] as string)?.split(',')[0] || req.socket.remoteAddress || '';
 
-    // Criar linha de itens para o Stripe usando price_data
-    const lineItems = items.map(item => {
-      const price = Number(item.price);
-      if (isNaN(price) || price <= 0) {
-        console.warn(`Preço inválido para o item ${item.title}: ${item.price}. Usando fallback 69`);
-      }
-      const finalPrice = (!isNaN(price) && price > 0) ? price : 69;
+    // Total exato em centavos
+    const totalPriceFloat = items.reduce((sum, item) => sum + Number(item.price) * item.quantity, 0);
+    const totalCents = Math.round(totalPriceFloat * 100);
+    const totalQty = items.reduce((sum, item) => sum + item.quantity, 0);
 
-      // Extrair número do set do handle
-      let setName = 'Set';
-      const match = item.handle.match(/set-(\d+)/i);
-      if (match && match[1]) {
-        setName = `Set-${match[1]}`;
-      } else {
-        // Fallback para tentar extrair qualquer número do final
-        const numMatch = item.handle.match(/(\d+)$/);
-        if (numMatch) {
-          setName = `Set-${numMatch[1]}`;
-        }
-      }
+    // Nome do line item baseado na quantidade
+    let lineName: string;
+    if (totalQty >= 2) {
+      lineName = `Bundle ${totalQty} perfumes`;
+    } else {
+      lineName = items[0]?.title || 'Perfume';
+    }
 
-      return {
-        price_data: {
-          currency: 'usd',
-          product_data: {
-            name: setName,
-            metadata: {
-              handle: item.handle,
-              originalStripeId: item.stripeId || ''
-            }
-          },
-          unit_amount: Math.round(finalPrice * 100), // Converter para centavos
+    // Um único line item garante preço exato sem erros de arredondamento
+    const lineItems = [{
+      price_data: {
+        currency: 'usd',
+        product_data: {
+          name: lineName,
+          metadata: {
+            handles: items.map(i => i.handle).join(','),
+            originalStripeIds: items.map(i => i.stripeId || '').join(','),
+          }
         },
-        quantity: item.quantity
-      };
-    });
+        unit_amount: totalCents,
+      },
+      quantity: 1
+    }];
 
     // IDs dos produtos para CAPI (mesmo ID usado nos browser pixel events)
     const contentIds = items.map(i => i.id || i.handle).filter(Boolean).join(',');

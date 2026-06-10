@@ -186,39 +186,47 @@ export default function CheckoutPage() {
             <h2 className="text-xl font-bold">Order Summary</h2>
           </div>
           <div className="space-y-2">
-            {items.map((item) => (
-              <div
-                key={item.id}
-                className="flex items-center space-x-4 space-y-2 last:border-0 last:pb-0"
-              >
-                <div className="relative w-20 h-20 bg-gray-100  flex-shrink-0 rounded-md border border-[#f1f1f1] shadow-sm">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-full rounded-md object-contain"
-                  />
-                  <div className="absolute -top-2 -right-2">
-                    <p className="text-[12px] text-white bg-black rounded-full w-fit px-2">
-                      {item.quantity}
-                    </p>
+            {(() => {
+              const sumOthers = items.slice(0, -1).reduce((s, it) => s + Math.round(it.price * 100) / 100 * it.quantity, 0);
+              const displayPrices = items.map((item, i) =>
+                i < items.length - 1
+                  ? Math.round(item.price * 100) / 100
+                  : parseFloat(((total - sumOthers) / item.quantity).toFixed(2))
+              );
+              return items.map((item, index) => (
+                <div
+                  key={item.id}
+                  className="flex items-center space-x-4 space-y-2 last:border-0 last:pb-0"
+                >
+                  <div className="relative w-20 h-20 bg-gray-100  flex-shrink-0 rounded-md border border-[#f1f1f1] shadow-sm">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-full rounded-md object-contain"
+                    />
+                    <div className="absolute -top-2 -right-2">
+                      <p className="text-[12px] text-white bg-black rounded-full w-fit px-2">
+                        {item.quantity}
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex-1 font-semibold">
-                  <h3 className="font-medium text-gray-900 text-sm">
-                    {item.title}
-                  </h3>
+                  <div className="flex-1 font-semibold">
+                    <h3 className="font-medium text-gray-900 text-sm">
+                      {item.title}
+                    </h3>
 
-                  <div className="flex items-center gap-2 mt-1">
-                    <span className="font-bold text-gray-900">
-                      ${item.price.toFixed(2)}
-                    </span>
-                    <span className="text-xs line-through text-gray-400">
-                      Was ${(item.originalPrice || 169.99).toFixed(2)}
-                    </span>
+                    <div className="flex items-center gap-2 mt-1">
+                      <span className="font-bold text-gray-900">
+                        ${displayPrices[index].toFixed(2)}
+                      </span>
+                      <span className="text-xs line-through text-gray-400">
+                        Was ${(item.originalPrice || 169.99).toFixed(2)}
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ));
+            })()}
           </div>
           <div className="flex flex-col-2 justify-between pt-4">
             <div className="flex items-center gap-1 text-[#ff0000] px-3 py-1 rounded-full text-xs font-bold">
