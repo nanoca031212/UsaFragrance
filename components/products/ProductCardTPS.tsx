@@ -20,6 +20,7 @@ export default function ProductCardTPS({
 }: ProductCardTPSProps) {
   const [imageError, setImageError] = useState(false);
   const [selectionIndices, setSelectionIndices] = useState<string>("");
+  const [totalSelectionCount, setTotalSelectionCount] = useState(0);
   const pixel = usePixel();
   const [isBundleEmpty, setIsBundleEmpty] = useState(true);
   const { addItem, clearCart, setIsOpen } = useCart();
@@ -34,6 +35,7 @@ export default function ProductCardTPS({
           const nonNullSelections = state.selections.filter((p: any) => p);
 
           setIsBundleEmpty(nonNullSelections.length === 0);
+          setTotalSelectionCount(nonNullSelections.length);
 
           const indices = nonNullSelections
             .map((p: any, idx: number) =>
@@ -44,14 +46,17 @@ export default function ProductCardTPS({
           setSelectionIndices(indices.join(", "));
         } else {
           setIsBundleEmpty(true);
+          setTotalSelectionCount(0);
           setSelectionIndices("");
         }
       } else {
         setIsBundleEmpty(true);
+        setTotalSelectionCount(0);
         setSelectionIndices("");
       }
     } catch (e) {
       setIsBundleEmpty(true);
+      setTotalSelectionCount(0);
       setSelectionIndices("");
     }
   };
@@ -151,15 +156,15 @@ export default function ProductCardTPS({
         state.selections[slotIndex] = product;
       } else {
         let pCount =
-          state.packType === "trio" ? 3 : state.packType === "hexa" ? 6 : 3;
+          state.packType === "trio" ? 3 : state.packType === "hexa" ? 5 : 3;
 
         let filledCount = state.selections.filter(
           (p: any) => p !== null,
         ).length;
         if (filledCount >= 3 && state.packType === "trio") {
           state.packType = "hexa";
-          while (state.selections.length < 6) state.selections.push(null);
-          pCount = 6;
+          while (state.selections.length < 5) state.selections.push(null);
+          pCount = 5;
         }
 
         let nextEmptySlot = -1;
@@ -172,10 +177,9 @@ export default function ProductCardTPS({
 
         if (nextEmptySlot !== -1) {
           state.selections[nextEmptySlot] = product;
-        } else if (pCount === 6) {
-          // Reset bundle if they add a 7th item (lose the discount)
-          state.packType = "trio";
-          state.selections = [product, null, null];
+        } else if (pCount === 5) {
+          // Bundle is full — keep adding at full price
+          state.selections.push(product);
         }
       }
 
@@ -188,15 +192,7 @@ export default function ProductCardTPS({
       if (!isSelectionMode) {
         await addBundleToCart(finalSelections, state.packType);
 
-        if (finalCount === 3 && state.packType === "trio") {
-          const firstProduct = finalSelections[0];
-          if (firstProduct) {
-            router.push(`/products/${firstProduct.handle}?scroll=bundle`);
-            return;
-          }
-        }
-
-        if (finalCount === 6) {
+        if (finalCount === 3 || finalCount === 5) {
           setIsOpen(true);
         }
       }
@@ -204,7 +200,7 @@ export default function ProductCardTPS({
       if (isSelectionMode && returnTo) {
         let nextEmptySlotAfter = -1;
         const pCount =
-          state.packType === "trio" ? 3 : state.packType === "hexa" ? 6 : 3;
+          state.packType === "trio" ? 3 : state.packType === "hexa" ? 5 : 3;
         for (let i = 0; i < pCount; i++) {
           if (!state.selections[i]) {
             nextEmptySlotAfter = i;
@@ -320,23 +316,23 @@ export default function ProductCardTPS({
           itemPrice = regularPrice;
           itemOriginalPrice = originalPrice;
         } else if (count === 3) {
-          itemPrice = 119.99 / 3;
+          itemPrice = 59.99 / 3;
           itemOriginalPrice = regularPrice;
-        } else if (count >= 4 && count < 6) {
+        } else if (count === 4) {
           if (i < 3) {
-            itemPrice = 119.99 / 3;
+            itemPrice = 59.99 / 3;
             itemOriginalPrice = regularPrice;
           } else {
             itemPrice = regularPrice;
             itemOriginalPrice = originalPrice;
           }
-        } else if (count === 6) {
-          itemPrice = 239.98 / 6;
+        } else if (count === 5) {
+          itemPrice = 99.99 / 5;
           itemOriginalPrice = regularPrice;
         } else {
-          // 7+ units: first 6 at bundle price, rest at full price
-          itemPrice = i < 6 ? 239.98 / 6 : regularPrice;
-          itemOriginalPrice = i < 6 ? regularPrice : originalPrice;
+          // 6+ units: first 5 at bundle price, rest at full price
+          itemPrice = i < 5 ? 99.99 / 5 : regularPrice;
+          itemOriginalPrice = i < 5 ? regularPrice : originalPrice;
         }
 
         const cartItem = {

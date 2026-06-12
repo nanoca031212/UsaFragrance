@@ -137,8 +137,8 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   const recalculateBundlePrices = (items: CartItem[]): CartItem[] => {
     const totalQuantity = items.reduce((sum, item) => sum + item.quantity, 0);
-    const promo3Price = 119.99 / 3;
-    const promo6Price = 239.98 / 6;
+    const promo3Price = 59.99 / 3;
+    const promo5Price = 99.99 / 5;
 
     if (totalQuantity <= 2) {
       return items.map(item => ({ ...item, price: item.regularPrice || item.price }));
@@ -148,8 +148,8 @@ export function CartProvider({ children }: { children: ReactNode }) {
       return items.map(item => ({ ...item, price: promo3Price }));
     }
 
-    if (totalQuantity === 4 || totalQuantity === 5) {
-      // Units 1-3 at promo3Price; units 4 and 5 at full (regular) price.
+    if (totalQuantity === 4) {
+      // Units 1-3 at promo3Price; unit 4 at full (regular) price.
       let remainingPromo = 3;
       return items.map(item => {
         const regularPrice = item.regularPrice || item.price;
@@ -168,19 +168,19 @@ export function CartProvider({ children }: { children: ReactNode }) {
       });
     }
 
-    if (totalQuantity >= 6) {
-      // First 6 units at promo6Price; units 7+ at full price.
-      let remainingPromo = 6;
+    if (totalQuantity >= 5) {
+      // First 5 units at promo5Price; units 6+ at full price.
+      let remainingPromo = 5;
       return items.map(item => {
         const regularPrice = item.regularPrice || item.price;
         if (remainingPromo >= item.quantity) {
           remainingPromo -= item.quantity;
-          return { ...item, price: promo6Price };
+          return { ...item, price: promo5Price };
         } else if (remainingPromo > 0) {
           const unitsAtPromo = remainingPromo;
           const unitsAtFull = item.quantity - unitsAtPromo;
           remainingPromo = 0;
-          const blendedPrice = (unitsAtPromo * promo6Price + unitsAtFull * regularPrice) / item.quantity;
+          const blendedPrice = (unitsAtPromo * promo5Price + unitsAtFull * regularPrice) / item.quantity;
           return { ...item, price: blendedPrice };
         } else {
           return { ...item, price: regularPrice };

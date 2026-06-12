@@ -59,7 +59,7 @@ export default function HeaderTPS({
       {/* Promotional Banner */}
       {!hidePromoBanner && !isCheckoutPage && (
         <div className="bg-black  text-white text-center px-2 py-2 text-[13px] font-bold">
-          Summer deal buy 2 fragrances for $119.99 & get the 3rd FREE
+          Mix & match any 3 fragrances — £59.99 for all three
         </div>
       )}
 
@@ -237,7 +237,7 @@ export default function HeaderTPS({
         <div
           className={`bg-white border border-black text-center font-bold text-md py-1 px-2 mx-1 ${isCheckoutPage ? "my-2" : "mt-2"}`}
         >
-          Mix & match any 3 fragrances $119.99 for all three
+          Mix & match any 3 fragrances $59.99 for all three
         </div>
       )}
     </header>

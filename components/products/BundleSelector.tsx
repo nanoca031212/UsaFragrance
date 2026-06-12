@@ -16,8 +16,8 @@ export interface BundleSelection {
   totalPrice: number;
 }
 
-const TRIO_PRICE = 119.99;
-const HEXA_PRICE = 239.98;
+const TRIO_PRICE = 59.99;
+const HEXA_PRICE = 99.99;
 
 export default function BundleSelector({
   currentProduct,
@@ -49,22 +49,22 @@ export default function BundleSelector({
   );
   const [fragranceSelections, setFragranceSelections] = useState<
     (Product | null)[]
-  >([currentProduct, null, null, null, null, null]);
+  >([currentProduct, null, null, null, null]);
 
   const packCount =
-    selectedPack === "single" ? 1 : selectedPack === "trio" ? 3 : 6;
+    selectedPack === "single" ? 1 : selectedPack === "trio" ? 3 : 5;
 
   const unitPrice = Number(currentProduct.price.regular) || 46.0;
   const SINGLE_ORIGINAL = unitPrice * 2.5; // Showing a premium original price
   const TRIO_ORIGINAL = unitPrice * 3 * 2;
-  const HEXA_ORIGINAL = unitPrice * 6 * 2;
+  const HEXA_ORIGINAL = unitPrice * 5 * 2;
 
   // Read localStorage selections on mount
   useEffect(() => {
     // Prioritize reset flag (from home page navigation)
     if (router.query.reset === "true") {
       setSelectedPack("single");
-      const initialSelections = [currentProduct, null, null, null, null, null];
+      const initialSelections = [currentProduct, null, null, null, null];
       setFragranceSelections(initialSelections);
       localStorage.setItem(
         "bundleState",
@@ -94,13 +94,13 @@ export default function BundleSelector({
 
         const selections = state.selections
           ? [...state.selections]
-          : [currentProduct, null, null, null, null, null];
+          : [currentProduct, null, null, null, null];
 
         // Always force current product as first selection
         selections[0] = currentProduct;
 
-        // Pad to 6 if needed
-        while (selections.length < 6) selections.push(null);
+        // Pad to 5 if needed
+        while (selections.length < 5) selections.push(null);
 
         setFragranceSelections(selections);
 
@@ -127,15 +127,14 @@ export default function BundleSelector({
 
     if (isNewPack) {
       if (packId === "single") {
-        finalSelections = [currentProduct, null, null, null, null, null];
+        finalSelections = [currentProduct, null, null, null, null];
       } else if (packId === "trio") {
         finalSelections[3] = null;
         finalSelections[4] = null;
-        finalSelections[5] = null;
       }
     }
 
-    const pCount = packId === "trio" ? 3 : packId === "hexa" ? 6 : 1;
+    const pCount = packId === "trio" ? 3 : packId === "hexa" ? 5 : 1;
     for (let i = 1; i < pCount; i++) {
       if (!finalSelections[i]) {
         slotToFill = i;
@@ -242,7 +241,7 @@ export default function BundleSelector({
     },
     {
       id: "hexa" as const,
-      label: "6 PERFUMES",
+      label: "5 PERFUMES",
       price: HEXA_PRICE,
       originalPrice: HEXA_ORIGINAL,
       popular: false,

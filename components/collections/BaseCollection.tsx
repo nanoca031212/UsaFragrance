@@ -23,7 +23,7 @@ export default function BaseCollection({
   filterFunction,
 }: BaseCollectionProps) {
   const [baseProducts, setBaseProducts] = useState<Product[]>(() =>
-    filterFunction ? initialProducts.filter(filterFunction) : initialProducts
+    filterFunction ? initialProducts.filter(filterFunction) : initialProducts,
   );
   const [products, setProducts] = useState(baseProducts);
 
@@ -92,20 +92,21 @@ export default function BaseCollection({
         if (state && Array.isArray(state.selections)) {
           if (state.selections[0]) setBaseProductId(state.selections[0].id);
           const pCount =
-            state.packType === "trio" ? 3 : state.packType === "hexa" ? 6 : 1;
+            state.packType === "trio" ? 3 : state.packType === "hexa" ? 5 : 1;
+          const nonNullCount = state.selections.filter((p: any) => p).length;
           let filled = 0;
           for (let i = 0; i < pCount; i++) {
             if (state.selections[i]) filled++;
           }
-          setRemaining(pCount - filled);
+          setRemaining(Math.max(0, pCount - filled));
           setPackName(
             state.packType === "trio"
               ? "3 Perfumes"
               : state.packType === "hexa"
-                ? "6 Perfumes"
+                ? "5 Perfumes"
                 : "1 Perfume",
           );
-          setSelectedCount(filled);
+          setSelectedCount(nonNullCount);
 
           // Encontrar todas as imagens dos produtos selecionados
           const nonNullSelections = state.selections.filter((p: any) => p);
@@ -402,22 +403,26 @@ export default function BaseCollection({
           >
             <Info className="h-5 w-5" />
             <h5 className="mb-1 font-semibold leading-none tracking-tight text-sm">
-              {selectedCount === 6
-                ? "🎉 Maximum Discount Achieved!"
-                : selectedCount >= 4
-                  ? "Continue adicionando!"
-                  : selectedCount === 3
-                    ? "🎉 Discount Unlocked!"
-                    : "Mix & match — 3 perfumes por £119.99"}
+              {selectedCount > 5
+                ? "Added at full price"
+                : selectedCount === 5
+                  ? "🎉 Maximum Discount Achieved!"
+                  : selectedCount === 4
+                    ? "Continue adicionando!"
+                    : selectedCount === 3
+                      ? "🎉 Discount Unlocked!"
+                      : "Mix & match — 3 perfumes por $59.99"}
             </h5>
             <div className="text-sm text-gray-500 mt-1">
-              {selectedCount < 3
-                ? `Buy any ${3 - selectedCount} fragrances for just $119.99 and get the 3rd FREE`
-                : selectedCount === 3
-                  ? `Congratulations, you've unlocked the discount 3 perfumes for £179.99. Select more 3 perfumes to unlock the maximum discount.`
-                  : selectedCount < 6
-                    ? `${6 - selectedCount} more perfume(s) to unlock the maximum discount.`
-                    : `Congratulations, you've unlocked the maximum discount!`}
+              {selectedCount > 5
+                ? `${selectedCount} items selected. First 5 at $99.99 bundle price, extra items at full price.`
+                : selectedCount < 3
+                  ? `${3 - selectedCount} perfumes missing. Unlock the discount.`
+                  : selectedCount === 3
+                    ? `Congratulations, you've unlocked the discount 3 perfumes for $59.99. Select 2 more perfumes to unlock the maximum discount.`
+                    : selectedCount < 5
+                      ? `${5 - selectedCount} more perfume(s) to unlock the maximum discount.`
+                      : `Congratulations, you've unlocked the maximum discount!`}
             </div>
           </div>
         </div>
