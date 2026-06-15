@@ -70,18 +70,14 @@ export default function HeaderTPS({
             className={`flex items-center h-16 ${isCheckoutPage ? "justify-center" : "justify-between pl-2"}`}
           >
             {/* Logo */}
-            <Link
-              href="/"
-              className="flex items-center"
-              suppressHydrationWarning
-            >
+            <a href="/" className="flex items-center">
               <img
                 src="/images/logo.webp"
                 alt="Logo"
                 width={260}
                 height={260}
               />
-            </Link>
+            </a>
 
             {/* Icons direita */}
             {!isCheckoutPage && (
@@ -142,14 +138,13 @@ export default function HeaderTPS({
           <div className="container mx-auto">
             <nav className="flex overflow-x-auto scrollbar-none">
               {/* Special Offers */}
-              <Link
+              <a
                 href="/"
                 className="flex-shrink-0 px-6 py-4 text-white text-sm font-medium uppercase tracking-wider
                        hover:bg-white hover:bg-opacity-10 transition-colors whitespace-nowrap"
-                suppressHydrationWarning
               >
                 SPECIAL OFFERS
-              </Link>
+              </a>
               {/* Men's Collection */}
               <Link
                 href="/collections/mens"

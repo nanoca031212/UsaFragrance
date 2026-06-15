@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import {
   EmbeddedCheckoutProvider,
@@ -7,6 +7,7 @@ import {
 import { useCart } from "@/contexts/CartContext";
 import { useUTM } from "@/hooks/useUTM";
 import { usePixel } from "@/hooks/usePixel";
+import { trackEvent } from "@/lib/utils";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import HeaderTPS from "@/components/layout/HeaderTPS";
@@ -44,6 +45,10 @@ export default function CheckoutPage() {
     minutes: 0,
     seconds: 0,
   });
+
+  useEffect(() => {
+    trackEvent('pre_ic', undefined, undefined, false);
+  }, []);
 
   // Synchronized Countdown timer logic
   useEffect(() => {

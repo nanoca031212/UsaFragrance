@@ -10,12 +10,16 @@ export const usePixel = (trackPageView = false) => {
   useEffect(() => {
     if (!trackPageView) return;
 
-    const handleRouteChange = () => trackEvent('PageView');
+    if (window.location.pathname === '/') {
+      if ((window as any).fbq) {
+        (window as any).fbq('track', 'PageView');
+      }
 
-    router.events.on('routeChangeComplete', handleRouteChange);
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange);
-    };
+      if (!sessionStorage.getItem('home_event_fired')) {
+        trackEvent('Home', undefined, undefined, false);
+        sessionStorage.setItem('home_event_fired', '1');
+      }
+    }
   }, [router.events, trackPageView]);
 
   return {

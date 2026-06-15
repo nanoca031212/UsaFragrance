@@ -11,7 +11,6 @@ import styles from "@/styles/animations.module.css";
 import { trackQuizStep } from "@/lib/utils";
 import { useRouter } from "next/router";
 import { useCart } from "@/contexts/CartContext";
-import Link from "next/link";
 import { Check } from "lucide-react";
 import { appendUTMsToUrl } from "@/utils/utm-helper";
 
@@ -879,12 +878,6 @@ export default function PerfumeQuiz() {
   const isPixelsReady = usePixelLoader();
   const { playSound, isInitialized: audioInitialized } = useAudioSystem();
 
-  // Rastrear visualização da pergunta quando gameStarted está true
-  useEffect(() => {
-    if (gameStarted && !quizCompleted) {
-      trackQuizStep("question_viewed", currentQuestion + 1);
-    }
-  }, [currentQuestion, gameStarted, quizCompleted]);
 
   // Avanço automático após selecionar uma resposta
   useEffect(() => {
@@ -947,7 +940,6 @@ export default function PerfumeQuiz() {
   // Modificar a função de início do quiz com loading e scroll automático
   const handleStartQuiz = () => {
     setIsLoading(true);
-    trackQuizStep("quiz_start"); // Rastrear início do quiz
 
     // Simular um pequeno delay para melhor UX
     setTimeout(() => {
@@ -960,11 +952,9 @@ export default function PerfumeQuiz() {
 
   // Função para lidar com o clique no botão de compra
   const handleBuyNowClick = (selectedKit: string) => {
-    trackQuizStep("go_to_store"); // Evento final - ir para a loja
-
     // Redirecionar para a loja, mas apenas se não estivermos nela
     if (router.asPath !== "/") {
-      router.push(appendUTMsToUrl("/"));
+      window.location.href = appendUTMsToUrl("/");
     } else {
       // Se já estiver na home, apenas rolar para o topo
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -1003,9 +993,6 @@ export default function PerfumeQuiz() {
       Number.parseInt(selectedAnswer) === currentQuestionData.correct;
     const questionNumber = currentQuestion + 1;
 
-    // Tracking de eventos - rastrear cada pergunta
-    trackQuizStep("question_answered", questionNumber, isCorrect);
-
     // Only track progress, remove discount logic and notification
     setCorrectAnswers((prev) => (prev < questions.length ? prev + 1 : prev));
 
@@ -1022,7 +1009,6 @@ export default function PerfumeQuiz() {
       } else {
         setQuizCompleted(true);
         setSelectedAnswer(""); // Clear selection even when finishing
-        trackQuizStep("quiz_completed"); // Rastrear conclusão do quiz
         // Scroll automático para o topo ao completar quiz
         window.scrollTo({ top: 0, behavior: "smooth" });
       }
@@ -1031,7 +1017,6 @@ export default function PerfumeQuiz() {
   };
 
   const handleRestart = () => {
-    trackQuizStep("quiz_restart"); // Rastrear reinício do quiz
     setGameStarted(false);
     setCurrentQuestion(0);
     setSelectedAnswer("");
@@ -1046,14 +1031,7 @@ export default function PerfumeQuiz() {
   const originalPrice = 169.99;
   const finalPrice = Math.max(originalPrice - discount, 69);
 
-  useTrackVSLView(); // Comentado junto com o VSL
-
-  // Rastrear visualização da página final
-  useEffect(() => {
-    if (quizCompleted) {
-      trackQuizStep("final_page_viewed");
-    }
-  }, [quizCompleted]);
+  useTrackVSLView();
 
   // Initial screen with the TikTok design
   if (!gameStarted) {
@@ -1091,7 +1069,7 @@ export default function PerfumeQuiz() {
 
             <div className="w-full max-w-xs pt-4 space-y-4">
               <div className="grid grid-cols-1 gap-4">
-                <Link href="/">
+                <a href="/">
                   <button className="w-full bg-black text-white text-lg font-bold py-5 gap-2 rounded-full transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center space-x-2">
                     <span>GO TO STORE</span>
                     <svg
@@ -1109,7 +1087,7 @@ export default function PerfumeQuiz() {
                       <path d="M16 10a4 4 0 0 1-8 0"></path>
                     </svg>{" "}
                   </button>
-                </Link>
+                </a>
 
       
               </div>

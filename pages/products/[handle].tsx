@@ -46,7 +46,7 @@ export default function ProductPage({
         content_ids: [product.id.toString()],
         content_type: "product",
         content_name: product.title,
-      });
+      }, undefined, false);
     }
   }, [product]);
 

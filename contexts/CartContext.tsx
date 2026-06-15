@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useContext, useState, ReactNode, useEffect } from 'react'
+import { createContext, useContext, useState, ReactNode, useEffect, useRef } from 'react'
 import { usePixel } from '@/hooks/usePixel'
 import { useUTM } from '@/hooks/useUTM'
 import { validateAndFixCartItem, initializeAutoCleanup } from '@/lib/cacheCleanup'
@@ -108,14 +108,6 @@ export function CartProvider({ children }: { children: ReactNode }) {
       ...validatedItem,
       stripeId
     }
-
-    // Rastrear evento AddToCart ANTES da função de setState
-    pixel.addToCart({
-      value: itemWithStripeId.price * quantity,
-      currency: 'USD',
-      content_name: itemWithStripeId.title,
-      content_ids: [itemWithStripeId.id.toString()]
-    })
 
     setItems(prevItems => {
       const existingItem = prevItems.find(item => item.id === itemWithStripeId.id)
@@ -232,6 +224,20 @@ export function CartProvider({ children }: { children: ReactNode }) {
   }
 
   const total = items.reduce((sum, item) => sum + (item.price * item.quantity), 0)
+
+  const addToCartFiredRef = useRef(false)
+  useEffect(() => {
+    if (isOpen && !addToCartFiredRef.current && items.length > 0) {
+      addToCartFiredRef.current = true
+      pixel.addToCart({
+        value: total,
+        currency: 'USD',
+        content_ids: items.map(item => item.id.toString()),
+        content_name: items[0]?.title || '',
+        num_items: items.reduce((sum, item) => sum + item.quantity, 0),
+      })
+    }
+  }, [isOpen])
 
   return (
     <CartContext.Provider

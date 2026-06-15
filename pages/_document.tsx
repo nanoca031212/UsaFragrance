@@ -66,7 +66,6 @@ export default function Document() {
               s.parentNode.insertBefore(t,s)}(window, document,'script',
               'https://connect.facebook.net/en_US/fbevents.js');
               fbq('init', '${process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID_1 || '1201843863809192'}');
-              fbq('track', 'PageView');
             `
           }}
         />
